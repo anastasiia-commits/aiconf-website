@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Not Another AI Conference — Barcelona</title>
+  <link rel="stylesheet" href="styles_final.css"/>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">Not Another AI Conference</div>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#program">Program</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#info">Venue & Info</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#tickets" class="btn btn-primary">Buy Tickets</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <h1 class="gradient-text">A space for engineers building and shipping modern AI</h1>
+    <p class="hero-sub">
+      Practical insights into LLMs, computer vision, and AI in production.
+    </p>
+
+    <div class="hero-meta">
+      <span>📍 Barcelona</span>
+      <span>📅 May 16, 2026</span>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#tickets" class="btn btn-primary">Buy Tickets</a>
+      <a href="#program" class="btn btn-ghost">View Program</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>About</h2>
+
+    <div class="about-slider" aria-label="About carousel">
+      <button class="slider-btn prev" type="button" aria-label="Previous">←</button>
+
+      <div class="about-viewport">
+      <div class="about-cards" id="aboutCards">
+        <div class="about-card">
+          <h3>Who We Are</h3>
+          <p>
+            We are a team of leaders from Uber, Incode, and Nebius.
+            Based in Madrid, we are deeply involved in the local and international ML and AI community — building and shaping real-world machine learning products for 9+ years.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Who This Conference is For</h3>
+          <p>
+            AI/ML engineers, Data scientists, Researchers in STEM, Top graduate students with real math/coding/ML experience, Mid-level and senior engineers looking for practice and peer exchange
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Why We Do It</h3>
+          <p>
+            Most conferences talk about AI without showing how it’s actually built.
+            We want to create a space for engineers and researchers to discuss practical solutions, real problems, and the approaches that they use.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>What to Expect</h3>
+          <p>
+            Hands-on workshops and Applied AI Talks led by engineers from teams such as OpenAI, NVIDIA, Perplexity, Nebius, Google DeepMind, and more. The sessions are designed to share best practices, and advanced approaches.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>When &amp; Where</h3>
+          <p>
+            Join us in sunny Barcelona at a modern, thoughtfully designed venue — on May 16, 2026.
+          </p>
+        </div>
+      </div>
+    </div>
+
+      <button class="slider-btn next" type="button" aria-label="Next">→</button>
+    </div>
+  </div>
+</section>
+
+<section id="program" class="section section-alt">
+  <div class="container">
+    <h2>Program</h2>
+    <p>
+      A focused, engineer-first day built around applied frontier AI — how to build and ship
+      large language models and computer vision in production, plus best practices for AI-assisted coding.
+    </p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Hands-on Workshops & Technical Walkthroughs</h3>
+        <p>Practical, step-by-step sessions. Topics include:</p>
+        <ul class="list">
+          <li>AI-assisted coding workflows</li>
+          <li>Integrating LLMs & VLMs into real products</li>
+          <li>Vision models for deepfake detection</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Applied AI Talks</h3>
+        <p>Focused on mechanisms, architectures, and implementation details:</p>
+        <div class="grid-2 inner-grid">
+          <div>
+            <h4>LLMs</h4>
+            <ul class="list">
+              <li>Training LLMs</li>
+              <li>Building coding agents</li>
+              <li>Using AI for coding</li>
+              <li>AI agents for applications (energy, manufacturing, healthcare)</li>
+              <li>Multimodal LLMs</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Computer Vision</h4>
+            <ul class="list">
+              <li>GenAI in 2D & 3D</li>
+              <li>Deepfake detection</li>
+              <li>AI for Robotics</li>
+              <li>Building AI-first startups</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Networking</h3>
+        <p>
+          Conversations that lead to real ideas and solutions — with peers who build.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Speakers & Instructors</h3>
+        <p>
+          Sessions are led by engineers from teams such as OpenAI, NVIDIA, Perplexity, Nebius,
+          Google DeepMind, and more — sharing best practices and advanced approaches.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="speakers" class="section">
+  <div class="container">
+    <h2>Speakers</h2>
+    <p>
+      Engineers and researchers from teams that build today’s most advanced AI systems.
+    </p>
+
+    <div class="carousel" id="speakersCarousel">
+      <div class="speaker-card">
+        <div class="avatar">ML</div>
+        <h3>Manager of Machine Learning Engineering</h3>
+        <p>Incode</p>
+      </div>
+
+      <div class="speaker-card">
+        <div class="avatar">3D</div>
+        <h3>Senior 3D CV Researcher, Founding Engineer</h3>
+        <p>Cinemersive Labs</p>
+      </div>
+
+      <div class="speaker-card">
+        <div class="avatar">GD</div>
+        <h3>Research Engineer</h3>
+        <p>Google DeepMind</p>
+      </div>
+
+      <div class="speaker-card">
+        <div class="avatar">NB</div>
+        <h3>PhD in Generative AI, AI Engineer</h3>
+        <p>Nebius</p>
+      </div>
+
+      <div class="speaker-card">
+        <div class="avatar">MS</div>
+        <h3>AI Research Scientist</h3>
+        <p>Mistral AI</p>
+      </div>
+
+      <div class="speaker-card">
+        <div class="avatar">NV</div>
+        <h3>ML Manager</h3>
+        <p>NVIDIA</p>
+      </div>
+    </div>
+
+    <div class="carousel-controls">
+      <button class="btn btn-ghost" id="speakersPrev" type="button">←</button>
+      <button class="btn btn-ghost" id="speakersNext" type="button">→</button>
+    </div>
+
+    <div class="organizers">
+      <h3>Organizers</h3>
+      <div class="grid-3">
+        <a class="card link-card" href="https://www.linkedin.com/in/efimboieru/" target="_blank" rel="noreferrer">
+          <h4>Efim Boieru</h4>
+          <p>Technical Vision & Content</p>
+        </a>
+
+        <a class="card link-card" href="https://www.linkedin.com/in/anastasiia-prokopenko/" target="_blank" rel="noreferrer">
+          <h4>Anastasiia Prokopenko</h4>
+          <p>Strategy & Partnerships</p>
+        </a>
+
+        <a class="card link-card" href="https://www.linkedin.com/in/mikhail-gutnikov-b662611b5/" target="_blank" rel="noreferrer">
+          <h4>Mikhail Gutnikov</h4>
+          <p>Operations & Growth</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="info" class="section section-alt">
+  <div class="container">
+    <h2>In Brief</h2>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Goal</h3>
+        <p>
+          Share key problems and best practices in applied frontier AI, focusing on computer vision and large language models —
+          both building and shipping cutting-edge AI. We also cover best practices for AI-assisted coding and using LLMs for downstream tasks.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Location</h3>
+        <p>Barcelona</p>
+      </div>
+
+      <div class="card">
+        <h3>Date</h3>
+        <p>May 16, 2026</p>
+      </div>
+
+      <div class="card">
+        <h3>Participants</h3>
+        <p>150 participants</p>
+      </div>
+
+      <div class="card">
+        <h3>Selectivity</h3>
+        <p>We admit people who work with ML or have a background in STEM.</p>
+      </div>
+
+      <div class="card">
+        <h3>Special Prices</h3>
+        <p>Discounts applicable for selected students.</p>
+      </div>
+
+      <div class="card">
+        <h3>Venue</h3>
+        <p>Sunny Barcelona — modern, thoughtfully designed venue (details soon).</p>
+      </div>
+
+      <div class="card">
+        <h3>Contact</h3>
+        <p>hello@notanotheraiconference.com</p>
+      </div>
+
+      <div class="card">
+        <h3>Conference Name</h3>
+        <p>Not Another AI Conference</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <a href="mailto:hello@notanotheraiconference.com" class="btn btn-primary">Email us</a>
+  </div>
+</section>
+
+<section id="tickets" class="section section-alt">
+  <div class="container">
+    <h2>Tickets</h2>
+    <p>
+      This is a selective, engineer-first event (150 participants). Student discounts are available for selected students.
+    </p>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Early Bird</h3>
+        <p class="price">€35</p>
+        <p class="muted">Limited quantity.</p>
+        <button class="btn btn-primary" data-buy="Early Bird">Buy</button>
+      </div>
+
+      <div class="card">
+        <h3>Standard</h3>
+        <p class="price">€49</p>
+        <p class="muted">Best for most attendees.</p>
+        <button class="btn btn-primary" data-buy="Standard">Buy</button>
+      </div>
+
+      <div class="card">
+        <h3>Student (Selected)</h3>
+        <p class="price">€25</p>
+        <p class="muted">Discount for selected students.</p>
+        <button class="btn btn-primary" data-buy="Student">Buy</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="getting-there" class="section">
+  <div class="container">
+    <h2>How to Get to the Venue</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>✈️ From the Airport</h3>
+        <p>
+          Barcelona–El Prat Airport (BCN) is ~20–30 minutes from the city center.
+          You can reach the venue by Aerobús, metro, or taxi.
+        </p>
+      </div>
+      <div class="card">
+        <h3>🚇 Public Transport</h3>
+        <p>
+          Barcelona has an extensive metro and bus network.
+          Exact metro and bus stops will be shared closer to the event.
+        </p>
+      </div>
+      <div class="card">
+        <h3>🚶 On Foot / Taxi</h3>
+        <p>
+          The venue is located in a central, walkable area.
+          Taxis and ride-sharing services are widely available.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sponsors" class="section section-alt">
+  <div class="container">
+    <h2>Sponsors</h2>
+    <p>
+      We partner with companies that build and support real-world AI systems.
+      Interested in sponsoring the conference? Get in touch with us.
+    </p>
+
+    <div class="grid-3 sponsors-grid">
+      <div class="card sponsor-card">Your Logo</div>
+      <div class="card sponsor-card">Your Logo</div>
+      <div class="card sponsor-card">Your Logo</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  © <span id="year">2026</span> Not Another AI Conference
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="script_final.js"></script>
+</body>
+</html>
