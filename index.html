@@ -4,361 +4,367 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Barcelona Applied Intelligence Conference</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css"/>
 </head>
-
 <body>
+
+<!-- Scanline overlay -->
+<div class="scanlines" aria-hidden="true"></div>
+
 <header class="site-header">
   <div class="container header-inner">
-    <div class="brand">Barcelona Applied Intelligence Conference</div>
+    <div class="brand">
+      <span class="brand-bracket">[</span>BAIC<span class="brand-bracket">]</span>
+    </div>
 
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#program">Program</a>
-      <a href="#speakers">Speakers</a>
-      <a href="#info">Venue & Info</a>
-      <a href="#contact">Contact</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="mainNav">
+      <a href="#about"><span class="nav-num">01</span>About</a>
+      <a href="#program"><span class="nav-num">02</span>Program</a>
+      <a href="#speakers"><span class="nav-num">03</span>Speakers</a>
+      <a href="#info"><span class="nav-num">04</span>Venue</a>
+      <a href="#contact"><span class="nav-num">05</span>Contact</a>
     </nav>
 
-    <a href="#tickets" class="btn btn-primary">Buy Tickets</a>
+    <a href="#tickets" class="btn btn-primary">Pre-register</a>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
   <div class="container hero-inner">
-    <h1 class="gradient-text">A space for engineers building and shipping modern AI</h1>
+    <div class="hero-tag"><span class="dot"></span> Barcelona · September 12, 2026</div>
+    <h1>
+      A space for<br>
+      <span class="hero-accent">engineers</span><br>
+      building & shipping<br>
+      <span class="hero-outline">modern AI</span>
+    </h1>
     <p class="hero-sub">
-      Practical insights into LLMs, computer vision, and AI in production.
+      Practical insights into LLMs, computer vision,<br class="br-desktop"> and AI in production. By engineers, for engineers.
     </p>
-
-    <div class="hero-meta">
-      <span>📍 Barcelona</span>
-      <span>📅 September 12, 2026</span>
-    </div>
-
     <div class="hero-actions">
-      <a href="#tickets" class="btn btn-primary">Buy Tickets</a>
-      <a href="#program" class="btn btn-ghost">View Program</a>
+      <a href="#tickets" class="btn btn-primary btn-lg">Pre-register</a>
+      <a href="#program" class="btn btn-ghost btn-lg">View Program →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">200</span><span class="stat-label">Participants</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">1</span><span class="stat-label">Focused Day</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Speakers</span></div>
     </div>
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="section">
   <div class="container">
-    <h2>About</h2>
-
-    <div class="about-slider" aria-label="About carousel">
-      <button class="slider-btn prev" type="button" aria-label="Previous">←</button>
-
-      <div class="about-viewport">
-      <div class="about-cards" id="aboutCards">
-        <div class="about-card">
-          <h3>Who We Are</h3>
-          <p>
-            We are a team of leaders from Uber, Incode, and Nebius.
-            Based in Madrid, we are deeply involved in the local and international ML and AI community — building and shaping real-world machine learning products for 9+ years.
-          </p>
-        </div>
-
-        <div class="about-card">
-          <h3>Who This Conference is For</h3>
-          <p>
-            AI/ML engineers, Data scientists, Researchers in STEM, Top graduate students with real math/coding/ML experience, Mid-level and senior engineers looking for practice and peer exchange
-          </p>
-        </div>
-
-        <div class="about-card">
-          <h3>Why We Do It</h3>
-          <p>
-            Most conferences talk about AI without showing how it’s actually built.
-            We want to create a space for engineers and researchers to discuss practical solutions, real problems, and the approaches that they use.
-          </p>
-        </div>
-
-        <div class="about-card">
-          <h3>What to Expect</h3>
-          <p>
-            Hands-on workshops and Applied AI Talks led by engineers from teams such as OpenAI, NVIDIA, Perplexity, Nebius, Google DeepMind, and more. The sessions are designed to share best practices, and advanced approaches.
-          </p>
-        </div>
-
-        <div class="about-card">
-          <h3>When &amp; Where</h3>
-          <p>
-            Join us in sunny Barcelona at a modern, thoughtfully designed venue — on September 12, 2026.
-          </p>
-        </div>
-      </div>
+    <div class="section-header">
+      <span class="section-tag mono">// 01_about</span>
+      <h2>About</h2>
     </div>
 
-      <button class="slider-btn next" type="button" aria-label="Next">→</button>
+    <div class="about-slider-wrap" aria-label="About carousel">
+      <div class="about-viewport">
+        <div class="about-cards" id="aboutCards">
+          <div class="about-card">
+            <div class="card-index mono">01/05</div>
+            <h3>Who We Are</h3>
+            <p>Leaders from Uber, Incode, and Nebius — building real-world ML products for 9+ years.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-index mono">02/05</div>
+            <h3>Who This Is For</h3>
+            <p>AI/ML engineers, data scientists, STEM researchers, and senior engineers seeking peer exchange.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-index mono">03/05</div>
+            <h3>Why We Do It</h3>
+            <p>Most conferences talk about AI without showing how it's built. We fix that.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-index mono">04/05</div>
+            <h3>What to Expect</h3>
+            <p>Workshops and talks by engineers from OpenAI, NVIDIA, Google DeepMind, and more.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-index mono">05/05</div>
+            <h3>When &amp; Where</h3>
+            <p>Barcelona, September 12, 2026. A focused single-day event built for depth over breadth.</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn prev" id="aboutPrev" type="button" aria-label="Previous">←</button>
+        <div class="slider-dots" id="aboutDots"></div>
+        <button class="slider-btn next" id="aboutNext" type="button" aria-label="Next">→</button>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- PROGRAM -->
 <section id="program" class="section section-alt">
   <div class="container">
-    <h2>Program</h2>
-    <p>
-      A focused, engineer-first day built around applied frontier AI — how to build and ship
-      large language models and computer vision in production, plus best practices for AI-assisted coding.
-    </p>
+    <div class="section-header">
+      <span class="section-tag mono">// 02_program</span>
+      <h2>Program</h2>
+    </div>
+    <p class="section-intro">A focused, engineer-first day built around applied frontier AI — how to build and ship large language models and computer vision in production.</p>
 
-    <div class="grid-2">
-      <div class="card">
-        <h3>Hands-on Workshops & Technical Walkthroughs</h3>
-        <p>Practical, step-by-step sessions. Topics include:</p>
+    <div class="program-grid">
+      <div class="program-card">
+        <h3>Hands-on Workshops &amp; Technical Walkthroughs</h3>
+        <p>Practical, step-by-step sessions diving deep into real tooling and workflows.</p>
         <ul class="list">
           <li>AI-assisted coding workflows</li>
-          <li>Integrating LLMs & VLMs into real products</li>
+          <li>Integrating LLMs &amp; VLMs into real products</li>
           <li>Vision models for deepfake detection</li>
         </ul>
       </div>
 
-      <div class="card">
-        <h3>Applied AI Talks</h3>
-        <p>Focused on mechanisms, architectures, and implementation details:</p>
-        <div class="grid-2 inner-grid">
-          <div>
-            <h4>LLMs</h4>
-            <ul class="list">
-              <li>Training LLMs</li>
-              <li>Building coding agents</li>
-              <li>Using AI for coding</li>
-              <li>AI agents for applications (energy, manufacturing, healthcare)</li>
-              <li>Multimodal LLMs</li>
-            </ul>
+      <div class="program-card">
+        <h3>Applied AI Talks — Large Language Models</h3>
+        <p>Focused on mechanisms, architectures, and implementation details.</p>
+        <ul class="list">
+          <li>Training LLMs from scratch</li>
+          <li>Building coding agents</li>
+          <li>Using AI for coding</li>
+          <li>AI agents for energy, manufacturing, healthcare</li>
+          <li>Multimodal LLMs</li>
+        </ul>
+      </div>
+
+      <div class="program-card">
+        <h3>Applied AI Talks — Computer Vision</h3>
+        <p>Deep dives into computer vision at the frontier.</p>
+        <ul class="list">
+          <li>GenAI in 2D &amp; 3D</li>
+          <li>Deepfake detection pipelines</li>
+          <li>AI for Robotics</li>
+          <li>Building AI-first startups</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEAKERS -->
+<section id="speakers" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag mono">// 03_speakers</span>
+      <h2>Speakers</h2>
+    </div>
+    <p class="section-intro">Engineers and researchers from teams building today's most advanced AI systems.</p>
+
+    <div class="speakers-carousel-wrap">
+      <button class="carousel-arrow left" id="speakersPrev" type="button" aria-label="Previous">←</button>
+
+      <div class="carousel" id="speakersCarousel">
+        <div class="speaker-card">
+          <div class="avatar"><span>ML</span></div>
+          <div class="speaker-info">
+            <h3>Manager of ML Engineering</h3>
+            <p class="speaker-company">Incode</p>
           </div>
-          <div>
-            <h4>Computer Vision</h4>
-            <ul class="list">
-              <li>GenAI in 2D & 3D</li>
-              <li>Deepfake detection</li>
-              <li>AI for Robotics</li>
-              <li>Building AI-first startups</li>
-            </ul>
+        </div>
+        <div class="speaker-card">
+          <div class="avatar"><span>3D</span></div>
+          <div class="speaker-info">
+            <h3>Senior 3D CV Researcher</h3>
+            <p class="speaker-company">Cinemersive Labs</p>
+          </div>
+        </div>
+        <div class="speaker-card">
+          <div class="avatar"><span>GD</span></div>
+          <div class="speaker-info">
+            <h3>Research Engineer</h3>
+            <p class="speaker-company">Google DeepMind</p>
+          </div>
+        </div>
+        <div class="speaker-card">
+          <div class="avatar"><span>NB</span></div>
+          <div class="speaker-info">
+            <h3>PhD in Generative AI</h3>
+            <p class="speaker-company">Nebius</p>
+          </div>
+        </div>
+        <div class="speaker-card">
+          <div class="avatar"><span>MS</span></div>
+          <div class="speaker-info">
+            <h3>AI Research Scientist</h3>
+            <p class="speaker-company">Mistral AI</p>
+          </div>
+        </div>
+        <div class="speaker-card">
+          <div class="avatar"><span>NV</span></div>
+          <div class="speaker-info">
+            <h3>ML Manager</h3>
+            <p class="speaker-company">NVIDIA</p>
           </div>
         </div>
       </div>
+
+      <button class="carousel-arrow right" id="speakersNext" type="button" aria-label="Next">→</button>
     </div>
+
+    <div class="carousel-dots" id="speakerDots"></div>
   </div>
 </section>
 
-<section id="speakers" class="section">
-  <div class="container">
-    <h2>Speakers</h2>
-    <p>
-      Engineers and researchers from teams that build today’s most advanced AI systems.
-    </p>
-
-    <div class="carousel" id="speakersCarousel">
-      <div class="speaker-card">
-        <div class="avatar">ML</div>
-        <h3>Manager of Machine Learning Engineering</h3>
-        <p>Incode</p>
-      </div>
-
-      <div class="speaker-card">
-        <div class="avatar">3D</div>
-        <h3>Senior 3D CV Researcher, Founding Engineer</h3>
-        <p>Cinemersive Labs</p>
-      </div>
-
-      <div class="speaker-card">
-        <div class="avatar">GD</div>
-        <h3>Research Engineer</h3>
-        <p>Google DeepMind</p>
-      </div>
-
-      <div class="speaker-card">
-        <div class="avatar">NB</div>
-        <h3>PhD in Generative AI, AI Engineer</h3>
-        <p>Nebius</p>
-      </div>
-
-      <div class="speaker-card">
-        <div class="avatar">MS</div>
-        <h3>AI Research Scientist</h3>
-        <p>Mistral AI</p>
-      </div>
-
-      <div class="speaker-card">
-        <div class="avatar">NV</div>
-        <h3>ML Manager</h3>
-        <p>NVIDIA</p>
-      </div>
-    </div>
-
-    <div class="carousel-controls">
-      <button class="btn btn-ghost" id="speakersPrev" type="button">←</button>
-      <button class="btn btn-ghost" id="speakersNext" type="button">→</button>
-    </div>
-
-    <div class="organizers">
-      <h3>Organizers</h3>
-      <div class="grid-3">
-        <a class="card link-card" href="https://www.linkedin.com/in/efimboieru/" target="_blank" rel="noreferrer">
-          <h4>Efim Boieru</h4>
-          <p>Technical Vision & Content</p>
-        </a>
-
-        <a class="card link-card" href="https://www.linkedin.com/in/anastasiia-prokopenko/" target="_blank" rel="noreferrer">
-          <h4>Anastasiia Prokopenko</h4>
-          <p>Strategy & Partnerships</p>
-        </a>
-
-        <a class="card link-card" href="https://www.linkedin.com/in/mikhail-gutnikov-b662611b5/" target="_blank" rel="noreferrer">
-          <h4>Mikhail Gutnikov</h4>
-          <p>Operations & Growth</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- INFO -->
 <section id="info" class="section section-alt">
   <div class="container">
-    <h2>In Brief</h2>
+    <div class="section-header">
+      <span class="section-tag mono">// 04_venue_info</span>
+      <h2>In Brief</h2>
+    </div>
 
-    <div class="grid-3">
-      <div class="card">
-        <h3>Goal</h3>
-        <p>
-          Share key problems and best practices in applied frontier AI, focusing on computer vision and large language models —
-          both building and shipping cutting-edge AI. We also cover best practices for AI-assisted coding and using LLMs for downstream tasks.
-        </p>
+    <div class="info-bento">
+      <div class="info-bento-wide">
+        <span class="info-label mono">// goal</span>
+        <p>Share key problems and best practices in applied frontier AI, focusing on computer vision and large language models — both building and shipping cutting-edge AI. We also cover best practices for AI-assisted coding and using LLMs for downstream tasks.</p>
       </div>
 
-      <div class="card">
-        <h3>Location</h3>
-        <p>Barcelona</p>
+      <div class="info-bento-card accent-card">
+        <span class="info-label mono">// date</span>
+        <div class="info-big">Sep 12<br><span class="info-year">2026</span></div>
       </div>
 
-      <div class="card">
-        <h3>Date</h3>
-        <p>September 12, 2026</p>
+      <div class="info-bento-card">
+        <span class="info-label mono">// location</span>
+        <div class="info-big-sm">Barcelona<br><span class="info-sub">Spain</span></div>
       </div>
 
-      <div class="card">
-        <h3>Participants</h3>
-        <p>200 participants</p>
+      <div class="info-bento-card">
+        <span class="info-label mono">// scale</span>
+        <div class="info-big">200<br><span class="info-sub">participants</span></div>
       </div>
 
-      <div class="card">
-        <h3>Selectivity</h3>
-        <p>We admit people who work with ML or have a background in STEM.</p>
+      <div class="info-bento-card">
+        <span class="info-label mono">// speakers</span>
+        <div class="info-big">10+<br><span class="info-sub">speakers</span></div>
       </div>
 
-      <div class="card">
-        <h3>Special Prices</h3>
-        <p>Discounts applicable for selected students.</p>
-      </div>
-
-      <div class="card">
-        <h3>Venue</h3>
-        <p>Sunny Barcelona — modern, thoughtfully designed venue (details soon).</p>
-      </div>
-
-      <div class="card">
-        <h3>Contact</h3>
-        <p>aiconference_barcelona@gmail.com</p>
-      </div>
-
-      <div class="card">
-        <h3>Conference Name</h3>
-        <p>Barcelona Applied Intelligence Conference</p>
+      <div class="info-bento-card" style="grid-column: span 2;">
+        <span class="info-label mono">// venue</span>
+        <p>Modern, thoughtfully designed venue in Barcelona — details coming soon.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="section">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <a href="mailto:aiconference_barcelona@gmail.com" class="btn btn-primary">Email us</a>
+  <div class="container contact-block">
+    <div>
+      <span class="section-tag mono">// 05_contact</span>
+      <h2>Get in Touch</h2>
+      <p>Questions about the conference, sponsorships, or speaking opportunities? Reach out to us directly.</p>
+    </div>
+    <a href="mailto:support@barcelonaconference.ai" class="btn btn-primary btn-lg">Email Us →</a>
   </div>
 </section>
 
+<!-- TICKETS -->
 <section id="tickets" class="section section-alt">
   <div class="container">
-    <h2>Tickets</h2>
-    <p>
-      This is a selective, engineer-first event (150 participants). Student discounts are available for selected students.
-    </p>
+    <div class="section-header">
+      <span class="section-tag mono">// 06_tickets</span>
+      <h2>Tickets</h2>
+    </div>
 
-    <div class="grid-3">
-      <div class="card">
-        <h3>Early Bird</h3>
-        <p class="price">€35</p>
-        <p class="muted">Limited quantity.</p>
-        <button class="btn btn-primary" data-buy="Early Bird">Buy</button>
+    <!-- Pre-register banner — active & prominent -->
+    <div class="preregister-banner">
+      <div class="preregister-pulse" aria-hidden="true"></div>
+      <div class="preregister-text">
+        <span class="preregister-badge mono"><span class="badge-dot"></span>Pre-registration is now open!</span>
+        <p>Fill in the form to stay tuned and get the best pricing.</p>
+      </div>
+      <a href="mailto:support@barcelonaconference.ai" class="btn btn-primary btn-lg">Pre-register →</a>
+    </div>
+
+    <!-- Pricing — inactive -->
+    <div class="tickets-inactive-label mono">// pricing — to be announced</div>
+    <div class="tickets-grid tickets-inactive">
+      <div class="ticket-card">
+        <div class="ticket-type mono">early_bird</div>
+        <div class="ticket-price">€100</div>
+        <p class="ticket-desc">Limited quantity. Get in early before they're gone.</p>
+        <button class="btn btn-ghost" disabled>Not yet available</button>
       </div>
 
-      <div class="card">
-        <h3>Standard</h3>
-        <p class="price">€49</p>
-        <p class="muted">Best for most attendees.</p>
-        <button class="btn btn-primary" data-buy="Standard">Buy</button>
+      <div class="ticket-card">
+        <div class="ticket-badge-inactive mono">most popular</div>
+        <div class="ticket-type mono">standard</div>
+        <div class="ticket-price">€135</div>
+        <p class="ticket-desc">Best for most attendees. Full access to all sessions.</p>
+        <button class="btn btn-ghost" disabled>Not yet available</button>
+      </div>
+       <div class="ticket-card">
+        <div class="ticket-badge-inactive mono">short notice</div>
+        <div class="ticket-type mono">last chance</div>
+        <div class="ticket-price">€170</div>
+        <p class="ticket-desc">If you don't want to commit in advance. Full access to all sessions.</p>
+        <button class="btn btn-ghost" disabled>Not yet available</button>
       </div>
 
-      <div class="card">
-        <h3>Student (Selected)</h3>
-        <p class="price">Free</p>
-        <p class="muted">Send us your CV and be selected to join for free</p>
-        <button class="btn btn-primary" data-buy="Student">Buy</button>
+      <div class="ticket-card">
+        <div class="ticket-type mono">student_selected</div>
+        <div class="ticket-price">Free</div>
+        <p class="ticket-desc">Send us your CV and be selected to join for free.</p>
+        <button class="btn btn-ghost" disabled>Not yet available</button>
       </div>
     </div>
   </div>
 </section>
 
-
-<section id="getting-there" class="section">
+<!-- ORGANIZERS — end of page -->
+<section id="organizers" class="section">
   <div class="container">
-    <h2>How to Get to the Venue</h2>
-    <div class="grid-3">
-      <div class="card">
-        <h3>✈️ From the Airport</h3>
-        <p>
-          Barcelona–El Prat Airport (BCN) is ~20–30 minutes from the city center.
-          You can reach the venue by Aerobús, metro, or taxi.
-        </p>
-      </div>
-      <div class="card">
-        <h3>🚇 Public Transport</h3>
-        <p>
-          Barcelona has an extensive metro and bus network.
-          Exact metro and bus stops will be shared closer to the event.
-        </p>
-      </div>
-      <div class="card">
-        <h3>🚶 On Foot / Taxi</h3>
-        <p>
-          The venue is located in a central, walkable area.
-          Taxis and ride-sharing services are widely available.
-        </p>
-      </div>
+    <div class="section-header">
+      <span class="section-tag mono">// 07_organizers</span>
+      <h2>Organizers</h2>
     </div>
-  </div>
-</section>
-
-<section id="sponsors" class="section section-alt">
-  <div class="container">
-    <h2>Sponsors</h2>
-    <p>
-      We partner with companies that build and support real-world AI systems.
-      Interested in sponsoring the conference? Get in touch with us.
-    </p>
-
-    <div class="grid-3 sponsors-grid">
-      <div class="card sponsor-card">Your Logo</div>
-      <div class="card sponsor-card">Your Logo</div>
-      <div class="card sponsor-card">Your Logo</div>
+    <div class="organizers-grid">
+      <a class="org-card" href="https://www.linkedin.com/in/efimboieru/" target="_blank" rel="noreferrer">
+        <div class="org-avatar">EB</div>
+        <h4>Efim Boieru</h4>
+        <p>Technical Vision &amp; Content</p>
+        <span class="org-link mono">linkedin ↗</span>
+      </a>
+      <a class="org-card" href="https://www.linkedin.com/in/anastasiia-prokopenko/" target="_blank" rel="noreferrer">
+        <div class="org-avatar">AP</div>
+        <h4>Anastasiia Prokopenko</h4>
+        <p>Strategy &amp; Partnerships</p>
+        <span class="org-link mono">linkedin ↗</span>
+      </a>
+      <a class="org-card" href="https://www.linkedin.com/in/mikhail-gutnikov-b662611b5/" target="_blank" rel="noreferrer">
+        <div class="org-avatar">MG</div>
+        <h4>Mikhail Gutnikov</h4>
+        <p>Operations &amp; Growth</p>
+        <span class="org-link mono">linkedin ↗</span>
+      </a>
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  © <span id="year">2026</span> Barcelona Applied Intelligence Conference
+  <div class="container footer-inner">
+    <div class="footer-brand mono">[BAIC] 2026</div>
+    <div class="footer-copy">© <span id="year">2026</span> Barcelona Applied Intelligence Conference</div>
+    <a href="mailto:support@barcelonaconference.ai" class="footer-email mono">support@barcelonaconference.ai</a>
+  </div>
 </footer>
 
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
