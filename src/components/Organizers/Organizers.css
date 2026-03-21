@@ -1,0 +1,62 @@
+/* ===== ORGANIZERS ===== */
+.organizers { margin-top: 56px; }
+
+.organizers-title {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  margin-bottom: 24px;
+  font-family: var(--mono);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.organizers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.org-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  text-decoration: none;
+  transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  display: block;
+}
+
+.org-card:hover {
+  border-color: var(--border-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 10, 0.4);
+}
+
+.org-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: var(--accent);
+  background: rgba(176, 128, 255, 0.1);
+  border: 1px solid rgba(176, 128, 255, 0.25);
+  margin-bottom: 16px;
+}
+
+.org-card h4 { font-size: 1rem; margin-bottom: 4px; }
+.org-card p { font-size: 0.88rem; color: var(--text-dim); margin: 0 0 12px; }
+.org-link { color: var(--accent); font-size: 0.72rem; }
+
+/* ===== ORGANIZERS RESPONSIVE ===== */
+@media (max-width: 860px) {
+  .organizers-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .organizers-grid { grid-template-columns: 1fr; }
+}

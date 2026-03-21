@@ -1,0 +1,33 @@
+import './Hero.css'
+
+export default function Hero() {
+  return (
+    <section className="hero">
+      <div className="hero-grid-bg" aria-hidden="true" />
+      <div className="hero-glow" aria-hidden="true" />
+      <div className="container hero-inner">
+        <div className="hero-tag"><span className="dot" /> Barcelona &middot; September 12, 2026</div>
+        <h1>
+          A space for<br />
+          <span className="hero-accent">engineers</span><br />
+          building &amp; shipping<br />
+          <span className="hero-outline">modern AI</span>
+        </h1>
+        <p className="hero-sub">
+          Practical insights into LLMs, computer vision,<br className="br-desktop" /> and AI in production. By engineers, for engineers.
+        </p>
+        <div className="hero-actions">
+          <a href="#preregister-form" className="btn btn-primary btn-lg">Pre-register</a>
+          <a href="#program" className="btn btn-ghost btn-lg">View Program &rarr;</a>
+        </div>
+        <div className="hero-stats">
+          <div className="stat"><span className="stat-num">200</span><span className="stat-label">Participants</span></div>
+          <div className="stat-divider" />
+          <div className="stat"><span className="stat-num">1</span><span className="stat-label">Focused Day</span></div>
+          <div className="stat-divider" />
+          <div className="stat"><span className="stat-num">10+</span><span className="stat-label">Speakers</span></div>
+        </div>
+      </div>
+    </section>
+  )
+}

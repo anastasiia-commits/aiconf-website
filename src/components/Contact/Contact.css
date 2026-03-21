@@ -1,0 +1,17 @@
+/* ===== CONTACT ===== */
+.contact-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-block h2 { margin-bottom: 8px; }
+.contact-block p { max-width: 440px; }
+
+/* ===== CONTACT RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .contact-block { flex-direction: column; align-items: flex-start; }
+  .contact-block .btn { width: 100%; }
+}
