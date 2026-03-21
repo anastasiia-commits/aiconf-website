@@ -8,14 +8,13 @@ export default function Hero() {
       <div className="container hero-inner">
         <div className="hero-tag"><span className="dot" /> Barcelona &middot; September 12, 2026</div>
         <h1>
-          A space for<br />
-          <span className="hero-accent">engineers</span><br />
-          building &amp; shipping<br />
-          <span className="hero-outline">modern AI</span>
+           Barcelona Applied<br />
+  <span className="hero-accent">Intelligence</span><br />
+  <span className="hero-outline">Conference-2026</span>
         </h1>
         <p className="hero-sub">
-          Practical insights into LLMs, computer vision,<br className="br-desktop" /> and AI in production. By engineers, for engineers.
-        </p>
+  A space for engineers building &amp; shipping modern AI —<br className="br-desktop" /> practical insights into LLMs, computer vision, and AI in production.
+</p>
         <div className="hero-actions">
           <a href="#preregister-form" className="btn btn-primary btn-lg">Pre-register</a>
           <a href="#program" className="btn btn-ghost btn-lg">View Program &rarr;</a>
