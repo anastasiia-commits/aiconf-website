@@ -12,6 +12,7 @@ interface FormErrors {
 }
 
 const FUNCTION_URL = import.meta.env.VITE_PREREGISTER_FUNCTION_URL || ''
+const ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || ''
 
 export default function PreregisterForm() {
   const [formData, setFormData] = useState({
@@ -64,7 +65,10 @@ export default function PreregisterForm() {
     try {
       const res = await fetch(FUNCTION_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${ANON_KEY}`,
+        },
         body: JSON.stringify({
           name: formData.name.trim(),
           country: formData.country.trim(),
