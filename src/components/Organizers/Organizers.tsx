@@ -1,9 +1,11 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal.ts'
 import './Organizers.css'
+import efimPhoto from '../../../public/Efim_Boieru.jpg'
+import anastasiaPhoto from '../../../public/Anastasiia_Prokopenko.jpg'
 
 const organizers = [
-  { initials: 'EB', name: 'Efim Boieru', role: 'Technical Vision & Content', linkedin: 'https://www.linkedin.com/in/efimboieru/', photo: '/Users/nastyaapro/Desktop/aiconf-website/public/Efim_Boieru.jpg' },
-  { initials: 'AP', name: 'Anastasiia Prokopenko', role: 'Strategy & Partnerships', linkedin: 'https://www.linkedin.com/in/anastasiia-prokopenko/', photo: '/Users/nastyaapro/Desktop/aiconf-website/public/Efim_Boieru.jpg' },
+  { initials: 'EB', name: 'Efim Boieru', role: 'Technical Vision & Content', linkedin: 'https://www.linkedin.com/in/efimboieru/', photo: efimPhoto },
+  { initials: 'AP', name: 'Anastasiia Prokopenko', role: 'Strategy & Partnerships', linkedin: 'https://www.linkedin.com/in/anastasiia-prokopenko/', photo: anastasiaPhoto },
   { initials: 'MG', name: 'Mikhail Gutnikov', role: 'Operations & Growth', linkedin: 'https://www.linkedin.com/in/mikhail-gutnikov-b662611b5/', photo: null },
 ]
 
