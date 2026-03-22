@@ -33,6 +33,7 @@ export default function PreregisterForm() {
   function validate(): FormErrors {
     const errs: FormErrors = {}
     if (!formData.name.trim()) errs.name = 'Name is required'
+    if (!formData.linkedin.trim()) errs.linkedin = 'LinkedIn is required'
     if (!formData.country.trim()) errs.country = 'Country is required'
     if (!formData.company.trim()) errs.company = 'Company / University is required'
     if (!formData.role.trim()) errs.role = 'Position is required'
@@ -219,7 +220,7 @@ export default function PreregisterForm() {
 
           <div className="form-group">
             <label htmlFor="prereg-linkedin" className="form-label">
-              LinkedIn
+              LinkedIn <span className="form-req" aria-label="required">*</span>
             </label>
             <input
               type="url"

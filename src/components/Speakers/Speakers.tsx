@@ -71,6 +71,13 @@ export default function Speakers() {
             />
           ))}
         </div>
+      <div className="speakers-cta">
+            href="mailto:inquiries@barcelonaconference.ai?subject=Speaker%20Application"
+            className="btn btn-secondary"
+          <a>
+            Become a Speaker
+          </a>
+        </div>
       </div>
     </section>
   )
