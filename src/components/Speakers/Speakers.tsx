@@ -4,10 +4,10 @@ import { useCarouselControls } from '../../hooks/useCarouselControls.ts'
 import './Speakers.css'
 
 const speakers = [
-  { initials: 'ML', title: 'Manager of ML Engineering', company: 'Incode' },
-  { initials: '3D', title: 'Senior 3D CV Researcher', company: 'Cinemersive Labs' },
-  { initials: 'GD', title: 'Research Engineer', company: 'Google DeepMind' },
-  { initials: 'NB', title: 'PhD in Generative AI', company: 'Nebius' },
+  { photo: '/Efim_Boieru.jpg', title: 'Efim Boieru', company: 'Manager of ML Engineering, Incode' },
+  { photo: '/Vlad_Ishimtsev', title: 'Vladislav Ishimtsev', company: 'Senior 3D CV Researcher, Cinemersive Labs' },
+  { photo: '/Iago_Suarez', title: 'Iago Suarez', company: 'Staff ML Enigneer, Qualcomm' },
+  { photo: '/Denis_Volkhonskiy', title: 'Denis Volkhonskiy', company: 'PhD in Generative AI, Nebius' },
   { initials: 'MS', title: 'AI Research Scientist', company: 'Mistral AI' },
   { initials: 'NV', title: 'ML Manager', company: 'NVIDIA' },
 ]
@@ -47,7 +47,9 @@ export default function Speakers() {
               {speakers.map((s, i) => (
                 <div key={i} className="speakers-slide">
                   <div className="speaker-card">
-                    <div className="avatar"><span>{s.initials}</span></div>
+                    <div className="avatar">
+                      {s.photo ? <img src={s.photo} alt={s.title} /> : <span>{s.initials}</span>}
+                      </div>
                     <div className="speaker-info">
                       <h3>{s.title}</h3>
                       <p className="speaker-company">{s.company}</p>
@@ -61,7 +63,7 @@ export default function Speakers() {
           <button className="carousel-arrow right" type="button" aria-label="Next" onClick={scrollNext}>&rarr;</button>
         </div>
 
-        <div className="carousel-dots">
+         <div className="carousel-dots">
           {scrollSnaps.map((_, i) => (
             <button
               key={i}
@@ -71,13 +73,11 @@ export default function Speakers() {
             />
           ))}
         </div>
-      <div className="speakers-cta">
-            href="mailto:inquiries@barcelonaconference.ai?subject=Speaker%20Application"
-            className="btn btn-secondary"
-          <a>
-            Become a Speaker
-          </a>
-        </div>
+        <div className="speakers-cta">
+  <a href="mailto:inquiries@barcelonaconference.ai?subject=Speaker%20Application" className="btn btn-secondary">
+    Become a Speaker
+  </a>
+</div>
       </div>
     </section>
   )
