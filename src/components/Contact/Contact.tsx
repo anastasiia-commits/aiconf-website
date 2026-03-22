@@ -9,7 +9,7 @@ export default function Contact() {
           <h2>Get in Touch</h2>
           <p>Questions about the conference, sponsorships, or speaking opportunities? Reach out to us directly.</p>
         </div>
-        <a href="mailto:support@barcelonaconference.ai" className="btn btn-primary btn-lg">Email Us &rarr;</a>
+        <a href="mailto:inquiries@barcelonaconference.ai" className="btn btn-primary btn-lg">Email Us &rarr;</a>
       </div>
     </section>
   )

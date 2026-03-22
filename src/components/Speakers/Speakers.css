@@ -89,3 +89,25 @@
   .carousel-arrow { width: 42px; height: 42px; font-size: 1rem; }
   .speakers-slide { flex: 0 0 100%; }
 }
+.speakers-cta {
+  margin-top: 40px;
+}
+
+.speakers-cta .btn-secondary {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-lg);
+  padding: 14px 28px;
+  text-decoration: none;
+  transition: border-color 0.3s, background 0.3s, transform 0.3s;
+}
+
+.speakers-cta .btn-secondary:hover {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
