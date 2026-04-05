@@ -1,5 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import './PreregisterForm.css'
+import Modal from '../Modal/Modal'
+import PrivacyPolicy from '../Legal/PrivacyPolicy'
 
 interface FormErrors {
   name?: string
@@ -29,6 +31,9 @@ export default function PreregisterForm() {
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
   const [honeypot, setHoneypot] = useState('')
+  const [privacyModalOpen, setPrivacyModalOpen] = useState(false)
+
+  const closePrivacyModal = () => setPrivacyModalOpen(false)
 
   function validate(): FormErrors {
     const errs: FormErrors = {}
@@ -249,7 +254,12 @@ export default function PreregisterForm() {
             <span className="checkbox-text">
               I consent to the collection and processing of my personal data for the purposes of
               registration and participation in the conference, in accordance with
-              the <a href="/privacy" className="inline-link" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+              the <span className="inline-link" onClick={() => {
+                setPrivacyModalOpen(true)
+              }}>Privacy Policy</span>.
+              <Modal open={privacyModalOpen} title="Privacy Policy" onClose={closePrivacyModal}>
+                <PrivacyPolicy />
+              </Modal>
               <span className="form-req" aria-label="required"> *</span>
             </span>
           </label>

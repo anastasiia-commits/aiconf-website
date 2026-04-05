@@ -75,8 +75,7 @@ a:focus-visible, button:focus-visible {
 
 .inline-link {
   color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  cursor: pointer;
 }
 
 /* ===== TYPOGRAPHY ===== */
