@@ -31,6 +31,23 @@
 }
 .footer-email:hover { color: var(--accent); }
 
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 0.75rem;
+  transition: color 0.2s;
+}
+.footer-link:hover { color: var(--accent); }
+
 /* ===== FOOTER RESPONSIVE ===== */
 @media (max-width: 640px) {
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
