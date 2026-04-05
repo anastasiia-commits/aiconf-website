@@ -1,10 +1,12 @@
 /* ===== INFO BENTO ===== */
 .info-bento {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-auto-rows: auto;
   gap: 16px;
 }
+
+.info-bento-venue { grid-column: span 2; }
 
 .info-bento-wide {
   grid-column: span 4;
@@ -104,11 +106,13 @@
 
 /* ===== INFO RESPONSIVE ===== */
 @media (max-width: 1024px) {
-  .info-bento { grid-template-columns: repeat(2, 1fr); }
+  .info-bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .info-bento-wide { grid-column: span 2; }
+  .info-bento-venue { grid-column: span 2; }
 }
 
 @media (max-width: 640px) {
-  .info-bento { grid-template-columns: 1fr; }
+  .info-bento { grid-template-columns: minmax(0, 1fr); }
   .info-bento-wide { grid-column: span 1; padding: 24px; }
+  .info-bento-venue { grid-column: span 1; }
 }

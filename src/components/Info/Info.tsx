@@ -35,7 +35,7 @@ export default function Info() {
             <div className="info-big">10+<br /><span className="info-sub">speakers</span></div>
           </div>
 
-          <div className="info-bento-card" style={{ gridColumn: 'span 2' }}>
+          <div className="info-bento-card info-bento-venue">
             <span className="info-label mono">// venue</span>
             <p>Modern, thoughtfully designed venue in Barcelona — details coming soon.</p>
           </div>

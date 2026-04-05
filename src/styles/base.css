@@ -139,6 +139,6 @@ p {
 
 /* ===== RESPONSIVE (base) ===== */
 @media (max-width: 640px) {
-  :root { --pad: 16px; }
+  :root { --pad: 20px; }
   .section { padding: 64px 0; }
 }
