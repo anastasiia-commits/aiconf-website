@@ -6,7 +6,6 @@ import './Speakers.css'
 const speakers = [
   { photo: '/Efim_Boieru.jpg', title: 'Efim Boieru', company: 'Manager of ML Engineering, Incode' },
   { photo: '/Vlad_Ishimtsev.jpg', title: 'Vladislav Ishimtsev', company: 'Senior 3D CV Researcher, Cinemersive Labs' },
-  { photo: '/Iago_Suarez.jpg', title: 'Iago Suarez', company: 'Staff ML Enigneer, Qualcomm' },
   { photo: '/Denis_Volkhonskiy.jpg', title: 'Denis Volkhonskiy', company: 'PhD in Generative AI, Nebius' },
   { initials: 'MS', title: 'AI Research Scientist', company: 'Mistral AI' },
   { initials: 'NV', title: 'ML Manager', company: 'NVIDIA' },
