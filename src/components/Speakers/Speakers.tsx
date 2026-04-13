@@ -74,7 +74,7 @@ export default function Speakers() {
           ))}
         </div>
         <div className="speakers-cta">
-  <a href="mailto:inquiries@barcelonaconference.ai?subject=Speaker%20Application" className="btn btn-secondary">
+  <a href="mailto:inquiries@barcelonaconference.ai?subject=Speaker%20Application" className="btn btn-primary">
     Become a Speaker
   </a>
 </div>

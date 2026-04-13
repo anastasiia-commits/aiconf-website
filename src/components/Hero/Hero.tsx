@@ -17,7 +17,7 @@ export default function Hero() {
 </p>
         <div className="hero-actions">
           <a href="#preregister-form" className="btn btn-primary btn-lg">Pre-register</a>
-          <a href="#program" className="btn btn-ghost btn-lg">View Program &rarr;</a>
+          <a href="mailto:inquiries@barcelonaconference.ai?subject=Speaker%20Application" className="btn btn-ghost btn-lg">Become a Speaker &rarr;</a>
         </div>
         <div className="hero-stats">
           <div className="stat"><span className="stat-num">200</span><span className="stat-label">Participants</span></div>
